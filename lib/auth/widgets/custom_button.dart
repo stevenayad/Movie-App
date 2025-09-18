@@ -5,6 +5,7 @@ class CustomButton extends StatelessWidget {
   final String imagePath; 
   final VoidCallback onPressed;
   final Color color;
+  final Color ?textandiconcolor;
   double width;
 
   CustomButton({
@@ -13,7 +14,8 @@ class CustomButton extends StatelessWidget {
     required this.imagePath,
     required this.onPressed, 
     required this.color,
-    this.width=double.infinity
+    this.width=double.infinity,
+    this.textandiconcolor=Colors.white
   }) : super(key: key);
 
   @override
@@ -36,12 +38,12 @@ class CustomButton extends StatelessWidget {
               imagePath,
               width: 24,
               height: 24,
-              color: Colors.white, 
+              color: textandiconcolor 
             ),
             const SizedBox(width: 8),
             Text(
               text,
-              style: const TextStyle(color: Colors.white, fontSize: 16),
+              style:  TextStyle(color: textandiconcolor, fontSize: 16),
             ),
           ],
         ),
