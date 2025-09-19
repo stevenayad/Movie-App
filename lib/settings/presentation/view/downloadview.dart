@@ -8,27 +8,11 @@ class Downloadview extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Container(
-              width: 40,
-              height: 40,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: Colors.grey,
-              ),
-              child: Center(
-                child: Icon(Icons.arrow_back, size: 24, color: Colors.white),
-              ),
-            ),
-            Text(
-              'Downloads',
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.w400),
-            ),
-            
-          ],
+        title: Text(
+          'Downloads',
+          style: TextStyle(fontSize: 24, fontWeight: FontWeight.w400),
         ),
+        centerTitle: true,
       ),
       body: Downloadbody(),
     );

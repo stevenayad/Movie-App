@@ -11,17 +11,6 @@ class Reviewsview extends StatelessWidget {
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Container(
-              width: 40,
-              height: 40,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: Colors.grey,
-              ),
-              child: Center(
-                child: Icon(Icons.arrow_back, size: 24, color: Colors.white),
-              ),
-            ),
             Text(
               'My Reviews',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.w400),

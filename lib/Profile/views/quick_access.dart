@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:movie/Profile/widgets/custom_content.dart';
+import 'package:movie/settings/presentation/view/downloadview.dart';
+import 'package:movie/settings/presentation/view/noticationview.dart';
+import 'package:movie/settings/presentation/view/reviewsview.dart';
+import 'package:movie/settings/setting_page.dart';
 
 class QuickAccess extends StatelessWidget {
   const QuickAccess({super.key});
@@ -20,6 +24,7 @@ class QuickAccess extends StatelessWidget {
           number: "12",
           showTrailing: true,
           onTap:() {
+            Navigator.push(context, MaterialPageRoute(builder: (context) => Downloadview(),));
           },
           ),
           CustomContent(
@@ -36,6 +41,7 @@ class QuickAccess extends StatelessWidget {
           number: "8",
           showTrailing: true,
           onTap:() {
+          Navigator.push(context, MaterialPageRoute(builder: (context) => Reviewsview(),));
           },
           ),
           CustomContent(
@@ -43,6 +49,7 @@ class QuickAccess extends StatelessWidget {
           contentName: "Notification",
           showTrailing: true,
           onTap:() {
+            Navigator.push(context, MaterialPageRoute(builder: (context) => Noticationview(),));
           },
           ),
           CustomContent(
@@ -50,6 +57,7 @@ class QuickAccess extends StatelessWidget {
           contentName: "Settings",
           showTrailing: true,
           onTap:() {
+            Navigator.push(context, MaterialPageRoute(builder: (context) => SettingPage(),));
           },
           ),
           CustomContent(

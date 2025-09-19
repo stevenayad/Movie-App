@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movie/Home/presentation/views/mainscreenview.dart';
 import 'package:movie/auth/login/login_page.dart';
 import 'package:movie/auth/register/widgets/TermsAgreementRow.dart';
 import 'package:movie/auth/register/widgets/auth_form.dart';
@@ -33,7 +34,7 @@ class RegisterPage extends StatelessWidget {
                 imagePath: "assets/icons/user.png",
                 color: Colors.red,
                 onPressed: () {
-                  
+                  Navigator.push(context, MaterialPageRoute(builder:  (context) => Mainscreenview(),));
                 },
               ),
 

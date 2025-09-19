@@ -6,6 +6,7 @@ import 'package:movie/Home/presentation/views/Myfavouriteview.dart';
 import 'package:movie/Home/presentation/views/homepageview.dart';
 import 'package:movie/Home/presentation/views/moviepageview.dart';
 import 'package:movie/Home/presentation/views/widget/customnavgationbar.dart';
+import 'package:movie/Profile/profile_page.dart';
 
 class Mainscreenview extends StatelessWidget {
   const Mainscreenview({super.key});
@@ -20,7 +21,7 @@ class Mainscreenview extends StatelessWidget {
           ).currentindex;
           return IndexedStack(
             index: currentindex,
-            children: [Homepageview(), Moviepageview(), Myfavouriteview(), ],
+            children: [Homepageview(), Moviepageview(), Myfavouriteview(), ProfilePage()],
           );
         },
       ),

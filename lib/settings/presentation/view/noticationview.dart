@@ -25,17 +25,7 @@ class _NoticationviewState extends State<Noticationview> {
         title: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Container(
-              width: 20,
-              height: 20,
-              decoration: const BoxDecoration(
-                shape: BoxShape.circle,
-                color: Colors.grey,
-              ),
-              child: const Center(
-                child: Icon(Icons.arrow_back, size: 16, color: Colors.white),
-              ),
-            ),
+            
             const Text(
               'Notifications',
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.w400),
